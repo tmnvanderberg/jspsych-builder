@@ -27,7 +27,7 @@ if (typeof jatos === "undefined") {
     });
 
     if (jsPsych) {
-      jatos.submitResultData(jsPsych.data.get().json(), jatos.startNextComponent);
+      jatos.submitResultData(jsPsych.data.get().csv(), jatos.startNextComponent);
     }
   });
 }
