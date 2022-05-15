@@ -31,7 +31,10 @@
     "prepare": "husky install",
     "prepack": "npm run build",
     "test": "node ./tests/story.js",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "precommit": [
+      "build"
+    ]
   },
   "dependencies": {
     "@babel/core": "^7.17.2",
