@@ -93,7 +93,7 @@ export const getWebpackConfig = (context: BuilderContext) => {
         },
       }),
       new HtmlWebpackTagsPlugin({
-        tags: context.isForJatos ? [{ path: "/assets/javascripts/jatos.js", append: false }] : [],
+        tags: context.isForJatos ? [{ path: "jatos.js", append: false }] : [],
       }),
       new CleanWebpackPlugin(),
     ],
